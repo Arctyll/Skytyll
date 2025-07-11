@@ -7,7 +7,8 @@ This plugin aims to recreate the SkyBlock experience from Hypixel with modular, 
 ---
 
 ## Features (so far)
-- None
+- Aspect of the End
+- /wikithis
 
 ---
 
