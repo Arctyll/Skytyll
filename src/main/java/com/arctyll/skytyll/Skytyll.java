@@ -1,18 +1,20 @@
 package com.arctyll.skytyll;
 
+import com.arctyll.skytyll.events.JoinListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Skytyll extends JavaPlugin {
 
-	@Override
-	public void onEnable() {
-		// TODO: Implement this method
-		super.onEnable();
-	}
+    private static Skytyll instance;
 
-	@Override
-	public void onDisable() {
-		// TODO: Implement this method
-		super.onDisable();
-	}
+    @Override
+    public void onEnable() {
+        instance = this;
+
+        getServer().getPluginManager().registerEvents(new JoinListener(), this);
+    }
+
+    public static Skytyll getInstance() {
+        return instance;
+    }
 }
