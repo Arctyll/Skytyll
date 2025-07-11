@@ -4,6 +4,7 @@ import com.arctyll.skytyll.events.JoinListener;
 import com.arctyll.skytyll.events.PlayerHungerListener;
 import com.arctyll.skytyll.events.PlayerInventoryClickListener;
 import com.arctyll.skytyll.commands.wikithis;
+import com.arctyll.skytyll.items.AspectListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Skytyll extends JavaPlugin {
@@ -18,6 +19,7 @@ public class Skytyll extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new PlayerHungerListener(), this);
         getServer().getPluginManager().registerEvents(new PlayerInventoryClickListener(), this);
         getCommand("wikithis").setExecutor(new wikithis());
+        getServer().getPluginManager().registerEvents(new AspectListener(), this);
     }
 
     public static Skytyll getInstance() {
