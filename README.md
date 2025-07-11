@@ -14,9 +14,9 @@ This plugin aims to recreate the SkyBlock experience from Hypixel with modular, 
 ## Setup
 
 ### 1. Requirements
-- Minecraft Server (Spigot or Paper)
-- Java 8 or higher
-- [Maven](https://maven.apache.org/) installed
+- A Minecraft Server software that supports plugins
+- Java 8
+- [Maven](https://maven.apache.org/)
 
 ### 2. Build Instructions
 
