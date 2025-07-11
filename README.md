@@ -24,7 +24,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/Arctyll/Skytyll.git
-cd Skytyll
+cd Skytyll```
 
 ## License
 
