@@ -25,3 +25,9 @@ Clone the repository:
 ```bash
 git clone https://github.com/Arctyll/Skytyll.git
 cd Skytyll
+
+## License
+
+Skytyll is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
+You are free to use, modify, and redistribute this plugin as long as you follow the terms of the GPLv3.
