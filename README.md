@@ -11,7 +11,7 @@ This plugin aims to recreate the SkyBlock experience from Hypixel with modular, 
 
 ---
 
-## 🛠 Setup
+## Setup
 
 ### 1. Requirements
 - Minecraft Server (Spigot or Paper)
