@@ -20,7 +20,7 @@ public class wikithis implements CommandExecutor {
         if (!(sender instanceof Player)) return true;
 
         Player player = (Player) sender;
-        ItemStack item = player.getInventory().getItemInMainHand();
+        ItemStack item = player.getItemInHand();
 
         if (item == null || !item.hasItemMeta() || !item.getItemMeta().hasDisplayName()) return true;
 
