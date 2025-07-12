@@ -23,7 +23,21 @@ public class wikithis implements CommandExecutor {
         String stripped = ChatColor.stripColor(raw);
         String name = stripped.replace(" ", "_");
 
-        player.sendMessage("https://hypixel-skyblock.fandom.com/wiki/" + name);
+        TextComponent component = new TextComponent(ChatColor.GRAY + "Click ");
+        TextComponent link = new TextComponent(ChatColor.YELLOW + ChatColor.BOLD + "HERE");
+        link.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://hypixel-skyblock.fandom.com/wiki/" + name));
+        link.setHoverEvent(new HoverEvent(
+                HoverEvent.Action.SHOW_TEXT,
+                new ComponentBuilder(
+                        ChatColor.GRAY + "View " + ChatColor.YELLOW + stripped + ChatColor.GRAY + " on the " + ChatColor.GOLD + "Official SkyBlock Wiki!"
+                ).create()));
+        component.addExtra(link);
+        component.addExtra(ChatColor.GRAY + " to find it on the" + ChatColor.GOLD + " Official SkyBlock Wiki" ChatColor.GRAY + "!");
+        
+        player.sendMessage("");
+        player.sendMessage(ChatColor.GRAY + "Found Item: " + stripped);
+        player.spigot().sendMessage(component);
+        player.sendMessage("");
         return true;
     }
 }
