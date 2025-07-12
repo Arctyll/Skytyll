@@ -2,7 +2,7 @@ name: Skytyll
 authors: [ Arctyll ]
 main: com.arctyll.skytyll.Skytyll
 version: '${project.version}'
-api-version: '1.8.8'
+api-version: '1.13'
 commands:
   wikithis:
     description: wikithis
